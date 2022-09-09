@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const {writeFile, readFile} = fs.promises
 const {v4: uuidv4} = require('uuid')
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const path = require('path')
 
 const app = express();
